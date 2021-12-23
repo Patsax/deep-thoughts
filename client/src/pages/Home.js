@@ -18,7 +18,7 @@ const Home = () => {
     <main>
       <div className="flex-row justify-space-between">
         {loggedIn && (
-          <div className="col-12 mb3">
+          <div className="col-12 mb-3">
             <ThoughtForm />
           </div>
         )}
