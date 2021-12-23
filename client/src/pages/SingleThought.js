@@ -10,13 +10,13 @@ const SingleThought = (props) => {
   const { id: thoughtId } = useParams();
 
   const { loading, data } = useQuery(QUERY_THOUGHT, {
-    variables: { id: thoughtId }
+    variables: { id: thoughtId },
   });
 
   const thought = data?.thought || {};
 
   if (loading) {
-    return <div>Loading...</div>
+    return <div>Loading...</div>;
   }
 
   return (
